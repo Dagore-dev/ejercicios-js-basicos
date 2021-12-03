@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="main.js"></script>
+  <script src="main.js" type="module"></script>
   <title>Ejercicios JS básico</title>
 </head>
 <body>
   <h1>Ejercicios JS básicos</h1>
   
   <section>
-    <h2>Ejercicio 1</h2>
+    <h2>Ejercicio 1 con un formulario</h2>
 
     <p>
       Desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente. Mostrar lo que debe abonar el comprador. Ingresar por teclado un precio con decimales y la cantidad sin decimales, es decir un entero.
@@ -38,6 +38,14 @@
   </section>
 
   <section>
+
+    <h2>Ejercicio 1 empleando <code>prompt()</code> y <code>alert()</code></h2>
+
+    <button id="prompt1">Ejecutar</button>
+
+  </section>
+
+  <section>
     <h2>Ejercicio 2</h2>
 
     <p>
@@ -49,9 +57,11 @@
       <input type="submit" value="Añadir texto">
       <input type="reset" value="Limpiar">
     </form>
-    <p id="result2">
-      Esperado input.
+    
+    <p>
+      <div id="result2"></div>
     </p>
+
   </section>
 
   <section>
@@ -63,8 +73,8 @@
     </p>
 
     <form id="form3">
-      <input type="number" id="num1">
-      <input type="number" id="num2">
+      <input type="number" id="num1" value="1">
+      <input type="number" id="num2" value="1">
 
       <input type="submit" value="¿Cuál es el mayor?">
       <input type="reset" value="Limpiar">
@@ -82,6 +92,7 @@
     <form id="form4">
       <input type="text" id="insert">
       <input type="submit" value="Insertar">
+      <input type="reset" value="Limpiar">
     </form>
 
     <ul id="list"></ul>
@@ -95,10 +106,24 @@
       Crea tres radiobuttons, cuando uno de ellos se seleccione que muestre un mensaje diciendo que opción se seleccionó.
     </p>
 
-    <form>
-      <input type="radio" name="radio" value="Opción 1">Opción 1</input>
-      <input type="radio" name="radio" value="Opción 2">Opción 2</input>
-      <input type="radio" name="radio" value="Opción 3">Opción 3</input>
+    <form id="form5">
+      
+      <label>
+        <input type="radio" name="radio" value="Opción 1"/>
+        Opción 1
+      </label>
+
+      <label>
+        <input type="radio" name="radio" value="Opción 2"/>        
+        Opción 2
+      </label>
+
+      <label>
+        <input type="radio" name="radio" value="Opción 3"/>
+        Opción 3
+      </label>
+
+      <input type="reset" value="Limpiar">
     </form>
 
     <p id="optionDisplay">
@@ -106,15 +131,5 @@
     </p>
   </section>
 
-  <section>
-
-    <h2>Ejercicio 6</h2>
-
-    <p>
-      Realizar un programa que lea por teclado dos números, si el primero es mayor al segundo informar su suma y diferencia, en caso contrario informar el producto y la división del primero respecto al segundo.
-    </p>
-
-    <button id="prompt1">Mostrar prompt</button>
-  </section>
 </body>
 </html>
