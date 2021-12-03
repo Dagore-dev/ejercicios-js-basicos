@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="main.js"></script>
+  <title>Ejercicios JS básico</title>
+</head>
+<body>
+  <h1>Ejercicios JS básicos</h1>
+  
+  <section>
+    <h2>Ejercicio 1</h2>
+
+    <p>
+      Desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente. Mostrar lo que debe abonar el comprador. Ingresar por teclado un precio con decimales y la cantidad sin decimales, es decir un entero.
+    </p>
+
+    <form id="form1">
+      <label>
+        Precio del artículo
+        <input type="number" step="any" value="1" id="price">
+      </label>
+
+      <label>
+        Cantidad
+        <input type="number" min="1" value="1" id="quantity">
+      </label>
+
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+    </form>
+
+    <p id="result1">
+      Esperando resultado.
+    </p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 2</h2>
+
+    <p>
+      Crear un input y un button, cuando le demos al botón, se añadirá el texto que hemos puesto en el input en un div vacío. Recuerda se añadirá el texto, no se machaca lo que haya en el div.
+    </p>
+
+    <form id="form2">
+      <input type="text" id="text">
+      <input type="submit" value="Añadir texto">
+      <input type="reset" value="Limpiar">
+    </form>
+    <p id="result2">
+      Esperado input.
+    </p>
+  </section>
+
+  <section>
+    
+    <h2>Ejercicio 3</h2>
+
+    <p>
+      Crear dos input de números y un botón, al pulsar el botón, mostrar en un alert quien es el mayor de los dos.
+    </p>
+
+    <form id="form3">
+      <input type="number" id="num1">
+      <input type="number" id="num2">
+
+      <input type="submit" value="¿Cuál es el mayor?">
+      <input type="reset" value="Limpiar">
+    </form>
+  </section>
+
+  <section>
+    
+    <h2>Ejercicio 4</h2>
+
+    <p>
+      Dado un input y un botón, escribir nombres de personas (solo controlamos que no esté vacío) y lo mostramos en una lista desordenada.
+    </p>
+
+    <form id="form4">
+      <input type="text" id="insert">
+      <input type="submit" value="Insertar">
+    </form>
+
+    <ul id="list"></ul>
+  </section>
+
+  <section>
+    
+    <h2>Ejercicio 5</h2>
+
+    <p>
+      Crea tres radiobuttons, cuando uno de ellos se seleccione que muestre un mensaje diciendo que opción se seleccionó.
+    </p>
+
+    <form>
+      <input type="radio" name="radio" value="Opción 1">Opción 1</input>
+      <input type="radio" name="radio" value="Opción 2">Opción 2</input>
+      <input type="radio" name="radio" value="Opción 3">Opción 3</input>
+    </form>
+
+    <p id="optionDisplay">
+      Esperando click.
+    </p>
+  </section>
+
+  <section>
+
+    <h2>Ejercicio 6</h2>
+
+    <p>
+      Realizar un programa que lea por teclado dos números, si el primero es mayor al segundo informar su suma y diferencia, en caso contrario informar el producto y la división del primero respecto al segundo.
+    </p>
+
+    <button id="prompt1">Mostrar prompt</button>
+  </section>
+</body>
+</html>
