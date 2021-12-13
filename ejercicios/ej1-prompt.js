@@ -1,9 +1,9 @@
 //Ejercicio 1: Desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente. Mostrar lo que debe abonar el comprador. Ingresar por teclado un precio con decimales y la cantidad sin decimales, es decir un entero.
+import {isInteger, isFloat} from '../utils/regexp.js';
+
 export default function ej1Prompt () {
 
     const $BUTTON = document.getElementById('prompt1');
-    const isFloat = /^\d+(\.|,)?\d*$/;
-    const isInteger = /\d+/;
 
     function handleClick () {
         const price = prompt('Introduzca el precio del artículo (un número que puede ser decimal):');

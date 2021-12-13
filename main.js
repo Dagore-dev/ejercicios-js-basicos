@@ -6,6 +6,7 @@ import ej4 from "./ejercicios/ej4.js";
 import ej5 from "./ejercicios/ej5.js";
 import ej6 from "./ejercicios/ej6.js";
 import ej6Prompt from "./ejercicios/ej6-prompt.js";
+import ej7 from "./ejercicios/ej7.js";
 
 ej1();
 ej1Prompt();
@@ -15,3 +16,4 @@ ej4();
 ej5();
 ej6();
 ej6Prompt();
+ej7();
