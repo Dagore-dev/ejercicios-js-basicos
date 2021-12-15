@@ -1,4 +1,5 @@
-const isInteger = /\d+/;
-const isFloat = /^\d+(\.|,)?\d*$/;
+const isInteger = /^-?\d+$/;
+const isFloat = /^-?\d+(\.|,)?\d*$/;
+const isPositiveInt = /^\d+$/;
 
-export {isInteger, isFloat};
+export {isInteger, isFloat, isPositiveInt};

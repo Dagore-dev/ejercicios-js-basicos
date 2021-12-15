@@ -58,9 +58,7 @@
       <input type="reset" value="Limpiar">
     </form>
     
-    <p>
-      <div id="result2"></div>
-    </p>
+    <div id="result2"></div>
 
   </section>
 
@@ -186,6 +184,153 @@
       <input type="submit" value="Comprobar">
     </form>
 
+  </section>
+
+  <section>
+    <h2>Ejercicio 8</h2>
+
+    <p>
+      Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+    </p>
+
+    <button id="prompt8">Ejecutar</button>
+
+    <p id="result8">
+      Esperando resultado
+    </p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 9</h2>
+
+    <p>
+      Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
+    </p>
+
+    <button id="prompt9">Ejecutar</button>
+
+    <p id="result9">
+      Esperando resultado.
+    </p>
+  </section>
+
+  <section>
+
+    <h2>Ejercicio 10 - 11</h2>
+
+    <p>
+      Se ingresa por teclado un número entero positivo de uno o dos dígitos. Controlar si el número introducido es correcto y mostrar un mensaje indicando si el número tiene uno o dos dígitos (recordar de convertir a entero con parseInt para preguntar posteriormente por una variable entera). Tener en cuenta qué condición debe cumplirse para tener dos dígitos un número entero.
+    </p>
+
+    <p>
+      Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.
+    </p>
+
+    <p>
+      He hecho la solución general usando un bucle indefinido.
+    </p>
+
+    <button id="prompt10">Ejecutar</button>
+
+    <p id="result10">
+      Esperando resultado.
+    </p>
+
+  </section>
+
+  <section>
+    <h2>Ejercicio 12</h2>
+
+    <p>
+      Realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad (se debe cargar por separado el dia, el mes y el año).
+    </p>
+
+    <form id="form12">
+      
+      <label>
+        Día
+        <input type="number" id="day" min="1" max="31" value="1">
+      </label>
+
+      <select id="month">
+        <option value="enero">Enero</option>
+        <option value="febrero">Febrero</option>
+        <option value="marzo">Marzo</option>
+        <option value="abril">Abril</option>
+        <option value="mayo">Mayo</option>
+        <option value="junio">Junio</option>
+        <option value="julio">Julio</option>
+        <option value="agosto">Agosto</option>
+        <option value="septiembre">Septiembre</option>
+        <option value="octubre">Octubre</option>
+        <option value="noviembre">Noviembre</option>
+        <option value="diciembre">Diciembre</option>
+      </select>
+
+      <label>
+        Año
+        <input type="number" id="year" min="1" value="2021">
+      </label>
+
+      <input type="submit" value="¿Es navidad?">
+      <input type="reset" value="Limpiar">
+    </form>
+
+  </section>
+
+  <section>
+    <h2>Ejercicio 13</h2>
+
+    <p>
+      Se ingresan tres valores por teclado, si todos son iguales se imprime la suma del primero con el segundo y a este resultado se lo multiplica por el tercero (tener en cuenta que puede haber tres condiciones simples).      
+    </p>
+
+    <button id="prompt13">Ejecutar</button>
+
+    <p id="result13">
+      Esperando resultado.
+    </p>
+  </section>
+
+  <section>
+    <h2>Ejercicio 14</h2>
+
+    <p>
+      De un aspirante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente información: nombre del aspirante, cantidad total de preguntas que se le realizaron y cantidad de preguntas que contestó correctamente. Se pide confeccionar un programa que lea los datos del aspirante e informe el nivel del mismo según el porcentaje de respuestas correctas que ha obtenido, y sabiendo que:
+    </p>
+
+    <ul>
+      <li>Nivel superior: Porcentaje >= 90%.</li>
+      <li>Nivel medio: Porcentaje >= 75%.</li>
+      <li>Nivel bajo: Porcentaje >= 50%.</li>
+      <li>Fuera de nivel: Porcentaje &lt; 50%. </li>
+    </ul>
+
+    <form id="form14">
+
+      <p>
+        <label>
+          Nombre del aspirante
+          <input type="text" id="name">
+        </label>
+      </p>
+
+      <label>
+        Número de preguntas:
+        <input type="number" id="num6">
+      </label>
+
+      <label>
+        Preguntas contestadas correctamente:
+        <input type="number" id="num7">
+      </label>
+
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+      </p>
+
+    </form>
   </section>
 
 </body>
