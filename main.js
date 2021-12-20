@@ -15,6 +15,7 @@ import ej13 from "./ejercicios/ej13.js";
 import ej14 from "./ejercicios/ej14.js";
 import ej15 from "./ejercicios/ej15.js";
 import ej16 from "./ejercicios/ej16.js";
+import ej17 from "./ejercicios/ej17.js";
 
 ej1();
 ej1Prompt();
@@ -33,3 +34,4 @@ ej13();
 ej14();
 ej15();
 ej16();
+ej17();
