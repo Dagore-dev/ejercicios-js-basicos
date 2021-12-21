@@ -1,26 +1,22 @@
-//Ejercicio 1: Desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente. Mostrar lo que debe abonar el comprador. Ingresar por teclado un precio con decimales y la cantidad sin decimales, es decir un entero.
-import {isInteger, isFloat} from '../utils/regexp.js';
+import { isInteger, isFloat } from "../utils/regexp.js";
 
-export default function ej1Prompt () {
+export default function ej1Prompt() {
+  const $BUTTON = document.getElementById("prompt1");
 
-    const $BUTTON = document.getElementById('prompt1');
+  function handleClick() {
+    const price = prompt(
+      "Introduzca el precio del artículo (un número que puede ser decimal):"
+    );
+    const units = prompt(
+      "Introduzca el número de unidades que ha comprado (un entero mayor o igual a 1):"
+    );
 
-    function handleClick () {
-        const price = prompt('Introduzca el precio del artículo (un número que puede ser decimal):');
-        const units = prompt('Introduzca el número de unidades que ha comprado (un entero mayor o igual a 1):')
-
-        if (isFloat.test(price) && isInteger.test(units) && units > 0) {
-            
-            alert(`El total asciende a ${price * units} euros.`);
-
-        }
-        else {
-            
-            alert('Ha ocurrido un error.');
-            
-        }
+    if (isFloat.test(price) && isInteger.test(units) && units > 0) {
+      alert(`El total asciende a ${price * units} euros.`);
+    } else {
+      alert("Ha ocurrido un error.");
     }
+  }
 
-    $BUTTON.addEventListener('click', handleClick);
-
+  $BUTTON.addEventListener("click", handleClick);
 }

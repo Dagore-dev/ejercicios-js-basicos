@@ -1,460 +1,565 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="main.js" type="module"></script>
-  <title>Ejercicios JS básico</title>
-</head>
-<body>
-  <h1>Ejercicios JS básicos</h1>
-  
-  <section>
-    <h2>Ejercicio 1 con un formulario</h2>
-
-    <p>
-      Desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente. Mostrar lo que debe abonar el comprador. Ingresar por teclado un precio con decimales y la cantidad sin decimales, es decir un entero.
-    </p>
-
-    <form id="form1">
-      <label>
-        Precio del artículo
-        <input type="number" step="any" value="1" id="price">
-      </label>
-
-      <label>
-        Cantidad
-        <input type="number" min="1" value="1" id="quantity">
-      </label>
-
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Limpiar">
-    </form>
-
-    <p id="result1">
-      Esperando resultado.
-    </p>
-  </section>
-
-  <section>
-
-    <h2>Ejercicio 1 empleando <code>prompt()</code> y <code>alert()</code></h2>
-
-    <button id="prompt1">Ejecutar</button>
-
-  </section>
-
-  <section>
-    <h2>Ejercicio 2</h2>
-
-    <p>
-      Crear un <code>input</code> y un <code>button</code>, cuando le demos al botón, se añadirá el texto que hemos puesto en el input en un <code>div</code> vacío. Recuerda se añadirá el texto, no se machaca lo que haya en el <code>div</code>.
-    </p>
-
-    <form id="form2">
-      <input type="text" id="text">
-      <input type="submit" value="Añadir texto">
-      <input type="reset" value="Limpiar">
-    </form>
-    
-    <div id="result2"></div>
-
-  </section>
-
-  <section>
-    
-    <h2>Ejercicio 3</h2>
-
-    <p>
-      Crear dos <code>input</code> de números y un botón, al pulsar el botón, mostrar en un <code>alert</code> quien es el mayor de los dos.
-    </p>
-
-    <form id="form3">
-      <input type="number" id="num1" value="1">
-      <input type="number" id="num2" value="1">
-
-      <input type="submit" value="¿Cuál es el mayor?">
-      <input type="reset" value="Limpiar">
-    </form>
-  </section>
-
-  <section>
-    
-    <h2>Ejercicio 4</h2>
-
-    <p>
-      Dado un <code>input</code> y un botón, escribir nombres de personas (solo controlamos que no esté vacío) y lo mostramos en una lista desordenada.
-    </p>
-
-    <form id="form4">
-      <input type="text" id="insert">
-      <input type="submit" value="Insertar">
-      <input type="reset" value="Limpiar">
-    </form>
-
-    <ul id="list"></ul>
-  </section>
-
-  <section>
-    
-    <h2>Ejercicio 5</h2>
-
-    <p>
-      Crea tres radiobuttons, cuando uno de ellos se seleccione que muestre un mensaje diciendo que opción se seleccionó.
-    </p>
-
-    <form id="form5">
-      
-      <label>
-        <input type="radio" name="radio" value="Opción 1"/>
-        Opción 1
-      </label>
-
-      <label>
-        <input type="radio" name="radio" value="Opción 2"/>        
-        Opción 2
-      </label>
-
-      <label>
-        <input type="radio" name="radio" value="Opción 3"/>
-        Opción 3
-      </label>
-
-      <input type="reset" value="Limpiar">
-    </form>
-
-    <p id="optionDisplay">
-      Esperando click.
-    </p>
-  </section>
-
-  <section>
-
-    <h2>Ejercicio 6 con un formulario</h2>
-
-    <p>
-      Realizar un programa que lea por teclado dos números, si el primero es mayor al segundo
-      informar su suma y diferencia, en caso contrario informar el producto y la división del primero
-      respecto al segundo.
-    </p>
-    
-    <form id="form6">
-
-      <label>
-        Primer número
-        <input type="number" id="num3" value="1">
-      </label>
-
-      <label>
-        Segundo número
-        <input type="number" id="num4" value="1">
-      </label>
-
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Limpiar">
-
-    </form>
-
-    <p id="result6">
-      Esperando resultado.
-    </p>
-  </section>
-
-  <section>
-
-    <h2>Ejercicio 6 empleando <code>prompt()</code> y <code>alert()</code></h2>
-
-    <button id="prompt6">Ejecutar</button>
-
-  </section>
-
-  <section>
-    
-    <h2>Ejercicio 7</h2>
-
-    <p>
-      Programa en el que se ingresen tres notas de un alumno, si el promedio es menor que 5 mostrar el mensaje “Repetidor”, entre 5 y 7 mostrar el mensaje “Superado” y si es mayor o igual a siete mostrar el mensaje ‘Promocionado’. Tener en cuenta que para obtener el promedio debemos operar la suma de las notas, y luego hacer promedio = suma / 3.
-    </p>
-
-    <form id="form7">
-      
-      <input type="number" id="num5" value="3" min="1">
-      
-      <input type="submit" value="Comprobar">
-    </form>
-
-  </section>
-
-  <section>
-    <h2>Ejercicio 8</h2>
-
-    <p>
-      Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
-    </p>
-
-    <button id="prompt8">Ejecutar</button>
-
-    <p id="result8">
-      Esperando resultado
-    </p>
-  </section>
-
-  <section>
-    <h2>Ejercicio 9</h2>
-
-    <p>
-      Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
-    </p>
-
-    <button id="prompt9">Ejecutar</button>
-
-    <p id="result9">
-      Esperando resultado.
-    </p>
-  </section>
-
-  <section>
-
-    <h2>Ejercicio 10 - 11</h2>
-
-    <p>
-      Se ingresa por teclado un número entero positivo de uno o dos dígitos. Controlar si el número introducido es correcto y mostrar un mensaje indicando si el número tiene uno o dos dígitos (recordar de convertir a entero con parseInt para preguntar posteriormente por una variable entera). Tener en cuenta qué condición debe cumplirse para tener dos dígitos un número entero.
-    </p>
-
-    <p>
-      Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.
-    </p>
-
-    <p>
-      He hecho la solución general usando un bucle indefinido.
-    </p>
-
-    <button id="prompt10">Ejecutar</button>
-
-    <p id="result10">
-      Esperando resultado.
-    </p>
-
-  </section>
-
-  <section>
-    <h2>Ejercicio 12</h2>
-
-    <p>
-      Realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad (se debe cargar por separado el dia, el mes y el año).
-    </p>
-
-    <form id="form12">
-      
-      <label>
-        Día
-        <input type="number" id="day" min="1" max="31" value="1">
-      </label>
-
-      <select id="month">
-        <option value="enero">Enero</option>
-        <option value="febrero">Febrero</option>
-        <option value="marzo">Marzo</option>
-        <option value="abril">Abril</option>
-        <option value="mayo">Mayo</option>
-        <option value="junio">Junio</option>
-        <option value="julio">Julio</option>
-        <option value="agosto">Agosto</option>
-        <option value="septiembre">Septiembre</option>
-        <option value="octubre">Octubre</option>
-        <option value="noviembre">Noviembre</option>
-        <option value="diciembre">Diciembre</option>
-      </select>
-
-      <label>
-        Año
-        <input type="number" id="year" min="1" value="2021">
-      </label>
-
-      <input type="submit" value="¿Es navidad?">
-      <input type="reset" value="Limpiar">
-    </form>
-
-  </section>
-
-  <section>
-    <h2>Ejercicio 13</h2>
-
-    <p>
-      Se ingresan tres valores por teclado, si todos son iguales se imprime la suma del primero con el segundo y a este resultado se lo multiplica por el tercero (tener en cuenta que puede haber tres condiciones simples).      
-    </p>
-
-    <button id="prompt13">Ejecutar</button>
-
-    <p id="result13">
-      Esperando resultado.
-    </p>
-  </section>
-
-  <section>
-    <h2>Ejercicio 14</h2>
-
-    <p>
-      De un aspirante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente información: nombre del aspirante, cantidad total de preguntas que se le realizaron y cantidad de preguntas que contestó correctamente. Se pide confeccionar un programa que lea los datos del aspirante e informe el nivel del mismo según el porcentaje de respuestas correctas que ha obtenido, y sabiendo que:
-    </p>
-
-    <ul>
-      <li>Nivel superior: Porcentaje >= 90%.</li>
-      <li>Nivel medio: Porcentaje >= 75%.</li>
-      <li>Nivel bajo: Porcentaje >= 50%.</li>
-      <li>Fuera de nivel: Porcentaje &lt; 50%. </li>
-    </ul>
-
-    <form id="form14">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" type="module"></script>
+    <title>Ejercicios JS básico</title>
+  </head>
+  <body>
+    <h1>Ejercicios JS básicos</h1>
+
+    <section>
+      <h2>Ejercicio 1 con un formulario</h2>
 
       <p>
+        Desarrollar un programa que pida el ingreso del precio de un artículo y
+        la cantidad que lleva el cliente. Mostrar lo que debe abonar el
+        comprador. Ingresar por teclado un precio con decimales y la cantidad
+        sin decimales, es decir un entero.
+      </p>
+
+      <form id="form1">
         <label>
-          Nombre del aspirante
-          <input type="text" id="name">
+          Precio del artículo
+          <input type="number" step="any" value="1" id="price" />
         </label>
-      </p>
 
-      <label>
-        Número de preguntas:
-        <input type="number" id="num6">
-      </label>
+        <label>
+          Cantidad
+          <input type="number" min="1" value="1" id="quantity" />
+        </label>
 
-      <label>
-        Preguntas contestadas correctamente:
-        <input type="number" id="num7">
-      </label>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+      </form>
+
+      <p id="result1">Esperando resultado.</p>
+    </section>
+
+    <section>
+      <h2>
+        Ejercicio 1 empleando <code>prompt()</code> y <code>alert()</code>
+      </h2>
+
+      <button id="prompt1">Ejecutar</button>
+    </section>
+
+    <section>
+      <h2>Ejercicio 2</h2>
 
       <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
+        Crear un <code>input</code> y un <code>button</code>, cuando le demos al
+        botón, se añadirá el texto que hemos puesto en el input en un
+        <code>div</code> vacío. Recuerda se añadirá el texto, no se machaca lo
+        que haya en el <code>div</code>.
       </p>
 
-    </form>
+      <form id="form2">
+        <input type="text" id="text" />
+        <input type="submit" value="Añadir texto" />
+        <input type="reset" value="Limpiar" />
+      </form>
 
-    <p id="result14">
-      Esperando resultado.
-    </p>
-  </section>
+      <div id="result2"></div>
+    </section>
 
-  <section>
+    <section>
+      <h2>Ejercicio 3</h2>
 
-    <h2>Ejercicio 15</h2>
+      <p>
+        Crear dos <code>input</code> de números y un botón, al pulsar el botón,
+        mostrar en un <code>alert</code> quien es el mayor de los dos.
+      </p>
 
-    <p>
-      De un operario se conoce su sueldo y los años de antigüedad. Se pide realizar un programa que lea los datos de entrada (sueldo y antigüedad) e informe de su sueldo actualizado según las siguientes condiciones:
-    </p>
+      <form id="form3">
+        <input type="number" id="num1" value="1" />
+        <input type="number" id="num2" value="1" />
 
-    <ul>
-      <li>Si el sueldo es inferior a 1000 y su antigüedad es igual o superior a 10 años,
-        otorgarle un aumento del 20 %, mostrar el sueldo a pagar.</li>
-      <li>Si el sueldo es inferior a 1000 pero su antigüedad es menor a 10 años, otorgarle un
-          aumento de 5 %.</li>
-      <li>Si el sueldo es mayor o igual a 1000 mostrar el sueldo en la página sin cambios.</li>
-    </ul>
+        <input type="submit" value="¿Cuál es el mayor?" />
+        <input type="reset" value="Limpiar" />
+      </form>
+    </section>
 
-    <form id="form15">
-      
-      <label>
-        Salario base
-        <input type="number" id="salary">
-      </label>
+    <section>
+      <h2>Ejercicio 4</h2>
 
-      <label>
-        Antigüedad
-        <input type="number" id="seniority">
-      </label>
+      <p>
+        Dado un <code>input</code> y un botón, escribir nombres de personas
+        (solo controlamos que no esté vacío) y lo mostramos en una lista
+        desordenada.
+      </p>
 
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Limpiar">
+      <form id="form4">
+        <input type="text" id="insert" />
+        <input type="submit" value="Insertar" />
+        <input type="reset" value="Limpiar" />
+      </form>
 
-    </form>
+      <ul id="list"></ul>
+    </section>
 
-    <p id="result15">
-      Esperando resultado.
-    </p>
+    <section>
+      <h2>Ejercicio 5</h2>
 
-  </section>
+      <p>
+        Crea tres radiobuttons, cuando uno de ellos se seleccione que muestre un
+        mensaje diciendo que opción se seleccionó.
+      </p>
 
-  <section>
+      <form id="form5">
+        <label>
+          <input type="radio" name="radio" value="Opción 1" />
+          Opción 1
+        </label>
 
-    <h2>Ejercicio 16</h2>
+        <label>
+          <input type="radio" name="radio" value="Opción 2" />
+          Opción 2
+        </label>
 
-    <p>
-      Realizar un programa para un concesionario que calcule el descuento de un coche según su
-      marca y modelo, en base a los siguientes datos:
-    </p>
+        <label>
+          <input type="radio" name="radio" value="Opción 3" />
+          Opción 3
+        </label>
 
-    <ul>
-      <li>Si la marca es Renault tiene un 15% de descuento.</li>
-      <li>Si la marca es Ford y el modelo es Fiesta tiene un descuento del 7%.</li>
-      <li>Si la marca es Ford y el modelo es Focus tiene un descuento del 10%.</li>
-      <li>El resto solo tiene un descuento del 5%.</li>
-    </ul>
+        <input type="reset" value="Limpiar" />
+      </form>
 
-    <form id="form16">
+      <p id="optionDisplay">Esperando click.</p>
+    </section>
 
-      <label>
-        Marca
-        <input type="text" id="carBrand">
-      </label>
+    <section>
+      <h2>Ejercicio 6 con un formulario</h2>
 
-      <label>
-        Modelo
-        <input type="text" id="carModel">
-      </label>
+      <p>
+        Realizar un programa que lea por teclado dos números, si el primero es
+        mayor al segundo informar su suma y diferencia, en caso contrario
+        informar el producto y la división del primero respecto al segundo.
+      </p>
 
-      <input type="submit" value="Ver descuento">
-      <input type="reset" value="Limpiar">
+      <form id="form6">
+        <label>
+          Primer número
+          <input type="number" id="num3" value="1" />
+        </label>
 
-    </form>
+        <label>
+          Segundo número
+          <input type="number" id="num4" value="1" />
+        </label>
 
-    <p id="result16">
-      Esperando resultado.
-    </p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+      </form>
 
-  </section>
+      <p id="result6">Esperando resultado.</p>
+    </section>
 
-  <section>
+    <section>
+      <h2>
+        Ejercicio 6 empleando <code>prompt()</code> y <code>alert()</code>
+      </h2>
 
-    <h2>Ejercicio 17</h2>
+      <button id="prompt6">Ejecutar</button>
+    </section>
 
-    <p>
-      Realizar un programa que introduciendo el mes y el año devuelva el número de días que tiene dicho mes. Recordar que hay que controlar si el año es bisiesto.
-    </p>
+    <section>
+      <h2>Ejercicio 7</h2>
 
-    <form id="form17">
+      <p>
+        Programa en el que se ingresen tres notas de un alumno, si el promedio
+        es menor que 5 mostrar el mensaje “Repetidor”, entre 5 y 7 mostrar el
+        mensaje “Superado” y si es mayor o igual a siete mostrar el mensaje
+        ‘Promocionado’. Tener en cuenta que para obtener el promedio debemos
+        operar la suma de las notas, y luego hacer promedio = suma / 3.
+      </p>
 
-      <select id="month2">
-        <option value="enero">Enero</option>
-        <option value="febrero">Febrero</option>
-        <option value="marzo">Marzo</option>
-        <option value="abril">Abril</option>
-        <option value="mayo">Mayo</option>
-        <option value="junio">Junio</option>
-        <option value="julio">Julio</option>
-        <option value="agosto">Agosto</option>
-        <option value="septiembre">Septiembre</option>
-        <option value="octubre">Octubre</option>
-        <option value="noviembre">Noviembre</option>
-        <option value="diciembre">Diciembre</option>
-      </select>
-      
-      <label>
-        Año
-        <input type="number" id="year2" min="0" value="2021">
-      </label>
+      <form id="form7">
+        <input type="number" id="num5" value="3" min="1" />
 
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Limpiar">
+        <input type="submit" value="Comprobar" />
+      </form>
+    </section>
 
-    </form>
+    <section>
+      <h2>Ejercicio 8</h2>
 
-    <p id="result17">
-      Esperando resultado.
-    </p>
+      <p>
+        Se cargan por teclado tres números distintos. Mostrar por pantalla el
+        mayor de ellos.
+      </p>
 
-  </section>
+      <button id="prompt8">Ejecutar</button>
 
-</body>
+      <p id="result8">Esperando resultado</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio 9</h2>
+
+      <p>
+        Se ingresa por teclado un valor entero, mostrar una leyenda que indique
+        si el número es positivo, cero o negativo.
+      </p>
+
+      <button id="prompt9">Ejecutar</button>
+
+      <p id="result9">Esperando resultado.</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio 10 - 11</h2>
+
+      <p>
+        Se ingresa por teclado un número entero positivo de uno o dos dígitos.
+        Controlar si el número introducido es correcto y mostrar un mensaje
+        indicando si el número tiene uno o dos dígitos (recordar de convertir a
+        entero con parseInt para preguntar posteriormente por una variable
+        entera). Tener en cuenta qué condición debe cumplirse para tener dos
+        dígitos un número entero.
+      </p>
+
+      <p>
+        Confeccionar un programa que permita cargar un número entero positivo de
+        hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3
+        cifras.
+      </p>
+
+      <p>He hecho la solución general usando un bucle indefinido.</p>
+
+      <button id="prompt10">Ejecutar</button>
+
+      <p id="result10">Esperando resultado.</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio 12</h2>
+
+      <p>
+        Realizar un programa que pida cargar una fecha cualquiera, luego
+        verificar si dicha fecha corresponde a Navidad (se debe cargar por
+        separado el dia, el mes y el año).
+      </p>
+
+      <form id="form12">
+        <label>
+          Día
+          <input type="number" id="day" min="1" max="31" value="1" />
+        </label>
+
+        <select id="month">
+          <option value="enero">Enero</option>
+          <option value="febrero">Febrero</option>
+          <option value="marzo">Marzo</option>
+          <option value="abril">Abril</option>
+          <option value="mayo">Mayo</option>
+          <option value="junio">Junio</option>
+          <option value="julio">Julio</option>
+          <option value="agosto">Agosto</option>
+          <option value="septiembre">Septiembre</option>
+          <option value="octubre">Octubre</option>
+          <option value="noviembre">Noviembre</option>
+          <option value="diciembre">Diciembre</option>
+        </select>
+
+        <label>
+          Año
+          <input type="number" id="year" min="1" value="2021" />
+        </label>
+
+        <input type="submit" value="¿Es navidad?" />
+        <input type="reset" value="Limpiar" />
+      </form>
+    </section>
+
+    <section>
+      <h2>Ejercicio 13</h2>
+
+      <p>
+        Se ingresan tres valores por teclado, si todos son iguales se imprime la
+        suma del primero con el segundo y a este resultado se lo multiplica por
+        el tercero (tener en cuenta que puede haber tres condiciones simples).
+      </p>
+
+      <button id="prompt13">Ejecutar</button>
+
+      <p id="result13">Esperando resultado.</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio 14</h2>
+
+      <p>
+        De un aspirante a un empleo, que realizó un test de capacitación, se
+        obtuvo la siguiente información: nombre del aspirante, cantidad total de
+        preguntas que se le realizaron y cantidad de preguntas que contestó
+        correctamente. Se pide confeccionar un programa que lea los datos del
+        aspirante e informe el nivel del mismo según el porcentaje de respuestas
+        correctas que ha obtenido, y sabiendo que:
+      </p>
+
+      <ul>
+        <li>Nivel superior: Porcentaje >= 90%.</li>
+        <li>Nivel medio: Porcentaje >= 75%.</li>
+        <li>Nivel bajo: Porcentaje >= 50%.</li>
+        <li>Fuera de nivel: Porcentaje &lt; 50%.</li>
+      </ul>
+
+      <form id="form14">
+        <p>
+          <label>
+            Nombre del aspirante
+            <input type="text" id="name" />
+          </label>
+        </p>
+
+        <label>
+          Número de preguntas:
+          <input type="number" id="num6" />
+        </label>
+
+        <label>
+          Preguntas contestadas correctamente:
+          <input type="number" id="num7" />
+        </label>
+
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpiar" />
+        </p>
+      </form>
+
+      <p id="result14">Esperando resultado.</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio 15</h2>
+
+      <p>
+        De un operario se conoce su sueldo y los años de antigüedad. Se pide
+        realizar un programa que lea los datos de entrada (sueldo y antigüedad)
+        e informe de su sueldo actualizado según las siguientes condiciones:
+      </p>
+
+      <ul>
+        <li>
+          Si el sueldo es inferior a 1000 y su antigüedad es igual o superior a
+          10 años, otorgarle un aumento del 20 %, mostrar el sueldo a pagar.
+        </li>
+        <li>
+          Si el sueldo es inferior a 1000 pero su antigüedad es menor a 10 años,
+          otorgarle un aumento de 5 %.
+        </li>
+        <li>
+          Si el sueldo es mayor o igual a 1000 mostrar el sueldo en la página
+          sin cambios.
+        </li>
+      </ul>
+
+      <form id="form15">
+        <label>
+          Salario base
+          <input type="number" id="salary" />
+        </label>
+
+        <label>
+          Antigüedad
+          <input type="number" id="seniority" />
+        </label>
+
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+      </form>
+
+      <p id="result15">Esperando resultado.</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio 16</h2>
+
+      <p>
+        Realizar un programa para un concesionario que calcule el descuento de
+        un coche según su marca y modelo, en base a los siguientes datos:
+      </p>
+
+      <ul>
+        <li>Si la marca es Renault tiene un 15% de descuento.</li>
+        <li>
+          Si la marca es Ford y el modelo es Fiesta tiene un descuento del 7%.
+        </li>
+        <li>
+          Si la marca es Ford y el modelo es Focus tiene un descuento del 10%.
+        </li>
+        <li>El resto solo tiene un descuento del 5%.</li>
+      </ul>
+
+      <form id="form16">
+        <label>
+          Marca
+          <input type="text" id="carBrand" />
+        </label>
+
+        <label>
+          Modelo
+          <input type="text" id="carModel" />
+        </label>
+
+        <input type="submit" value="Ver descuento" />
+        <input type="reset" value="Limpiar" />
+      </form>
+
+      <p id="result16">Esperando resultado.</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio 17</h2>
+
+      <p>
+        Realizar un programa que introduciendo el mes y el año devuelva el
+        número de días que tiene dicho mes. Recordar que hay que controlar si el
+        año es bisiesto.
+      </p>
+
+      <form id="form17">
+        <select id="month2">
+          <option value="0">Enero</option>
+          <option value="1">Febrero</option>
+          <option value="2">Marzo</option>
+          <option value="3">Abril</option>
+          <option value="4">Mayo</option>
+          <option value="5">Junio</option>
+          <option value="6">Julio</option>
+          <option value="7">Agosto</option>
+          <option value="8">Septiembre</option>
+          <option value="9">Octubre</option>
+          <option value="10">Noviembre</option>
+          <option value="11">Diciembre</option>
+        </select>
+
+        <label>
+          Año
+          <input type="number" id="year2" min="0" value="2021" />
+        </label>
+
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+      </form>
+
+      <p id="result17">Esperando resultado.</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio 18</h2>
+
+      <p>
+        Crear un programa donde el usuario introduzca su altura, edad y sexo y
+        le devuelva el peso ideal recomendado. La fórmula a aplicar es:
+        50+((altura-150)/4)*3 + (Edad-20)/4 y si es mujer * 0,9.
+      </p>
+
+      <form id="form18">
+        <label>
+          Altura (cm)
+          <input type="number" id="height" min="0" />
+        </label>
+
+        <label>
+          Edad
+          <input type="number" id="age" min="1" />
+        </label>
+
+        <label>
+          Sexo
+
+          <select name="gender" id="gender">
+            <option value="male">Hombre</option>
+            <option value="female">Mujer</option>
+            <option value="other">Otro, prefiero no contestar</option>
+          </select>
+        </label>
+
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+      </form>
+
+      <p id="result18">Esperando resultado.</p>
+    </section>
+
+    <section>
+      <h2>Ejercicio 19</h2>
+
+      <p>
+        Realizar un programa que simule un Juego de dados. El usuario empieza
+        con 50€ para apostar. El usuario indica a qué número apostar entre el 1
+        y el 6. Se hace una asignación al azar entre 1 y 6. Si el usuario
+        acierta, gana el doble de lo apostado y si no acierta, pierde lo
+        apostado. El juego acaba cuando el usuario llega a 0€ (pierde) o llega a
+        200€ (gana).
+      </p>
+
+      <p id="cash" data-cash="50">Disponible: 50 euros.</p>
+
+      <form id="form19">
+        <label>
+          ¿Cuánto desea apostar?
+          <input type="number" id="bet" min="1" max="50" />
+        </label>
+
+        <label>
+          ¿Por qué número apuesta?
+
+          <select name="diceResult" id="diceResult">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </label>
+
+        <input type="submit" value="Apostar" id="submit19" />
+        <input type="reset" value="Nueva partida" />
+      </form>
+    </section>
+
+    <section>
+      <h2>Ejercicio 20</h2>
+
+      <p>
+        Calcular el precio de un producto introduciendo la base imponible (BI),
+        seleccionando el tipo de iva que se le aplica (normal: 21%, reducido:
+        10%) e introduciendo el peso para calcular los gastos de envío (Peso
+        &lt; 1Kg: 3€, Peso &lt; 3kg: 5€ y Peso >= 3Kg 10€).
+      </p>
+
+      <form id="form20">
+        <label>
+          Base imponible (euros):
+          <input type="number" id="bi" min="0" step="any" />
+        </label>
+
+        <label>
+          IVA aplicado
+
+          <select name="iva" id="iva">
+            <option value="21">Normal</option>
+            <option value="10">Reducido</option>
+          </select>
+        </label>
+
+        <label>
+          Peso (kg):
+          <input type="number" id="weight" min="0" step="any" />
+        </label>
+
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+      </form>
+
+      <p id="result20">Esperando resultado.</p>
+    </section>
+  </body>
 </html>
